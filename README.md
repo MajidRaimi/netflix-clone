@@ -1,36 +1,62 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# 🎥 Netflix Clone Project 🍿
 
-## Getting Started
+This project is a clone of Netflix, built using a modern tech stack to demonstrate full-stack development capabilities. Below are the technologies used and steps to set up the project.
 
-First, run the development server:
+## 🚀 Technologies Used
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+- **Next.js**: A React framework for building user interfaces. 🌐 [Next.js Documentation](https://nextjs.org/)
+- **Supabase**: An open-source Firebase alternative providing database and authentication solutions. 🔐 [Supabase Documentation](https://supabase.com/)
+- **Prisma**: An open-source database toolkit, making database access easy and type-safe. 🗄️ [Prisma Documentation](https://www.prisma.io/)
+- **Tailwind CSS**: A utility-first CSS framework for rapidly building custom designs. 🎨 [Tailwind CSS Documentation](https://tailwindcss.com/)
+- **Next-Auth**: Authentication for Next.js applications. 🔑 [Next-Auth Documentation](https://next-auth.js.org/)
+- **Auth.js**: A JavaScript library for authentication. 🛡️ [Auth.js Documentation](https://authjs.dev/)
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## 🛠️ Project Setup
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+1. **Clone the Repository** 📂
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+   ```bash
+   git clone [repository-url]
+   cd [repository-name]
+   ```
 
-## Learn More
+2. **Install Dependencies** 📦
 
-To learn more about Next.js, take a look at the following resources:
+   ```bash
+   npm install
+   ```
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+3. **Configure Environment Variables** ⚙️
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+   Create a `.env.local` file in the root directory and add the necessary environment variables:
 
-## Deploy on Vercel
+   ```env
+   NEXT_PUBLIC_SUPABASE_URL=your_supabase_url
+   NEXT_PUBLIC_SUPABASE_ANON_KEY=your_supabase_anon_key
+   ```
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+4. **Initialize the Database** 📚
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+   Use Prisma to set up your database schema:
+
+   ```bash
+   npx prisma migrate dev
+   ```
+
+5. **Run the Application** 🏃‍♂️
+
+   Start the development server:
+
+   ```bash
+   npm run dev
+   ```
+
+   Visit `http://localhost:3000` in your browser to see the application. 🌐
+
+## 👥 Contributing
+
+Contributions are welcome! 🙌 Please read our contributing guidelines and submit your pull requests or issues.
+
+## 📄 License
+
+This project is licensed under the [MIT License](LICENSE).
